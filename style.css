@@ -22,8 +22,50 @@
 }
 
 .card{
-    width: calc(100% / 5 - 20px);
+    width: calc(100% / 5 - 25px);
     height: 90%;
     background-color: aqua;
     margin: 0 10px;
+}
+
+.photo{
+    width: calc(100% / 1 - 20px );
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+
+}
+.photo img{
+    width: 100%;
+}
+
+.txt :first-child{
+    font-weight: bold;
+    font-size: 1.2rem
+}
+.txt :last-child{
+    font-size: .6rem;
+    margin-top: 8px
+}
+
+.txt > p{
+    color: white;
+    font-size: 11px;
+    margin: 0 10px
+}
+
+.play{
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    color: white
 }

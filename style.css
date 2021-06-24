@@ -24,9 +24,10 @@
 .card{
     width: calc(100% / 5 - 25px);
     height: 90%;
-    background-color: #181818;
+    background-color: #202020;
     margin: 0 10px;
-    border-radius: 10px;
+    border-radius: 6px;
+    transition: all 100ms ease-in;
 }
 
 .photo{
@@ -56,15 +57,16 @@
     margin: 0 10px
 }
 .play-btn{
-    display: none;
+    visibility: hidden;
     position: absolute;
     bottom: 5%;
     right: 5%;
+    transition: all 200ms ease-in;
 }
 .play{
-    width: 25px;
-    height: 25px;
-    background-color: green;
+    width: 30px;
+    height: 30px;
+    background-color: #1db954;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -73,14 +75,18 @@
     color: white;
 }
 
-.card :hover .play-btn{
+.card:hover .play-btn{
     display: block;
+    margin-bottom: 10px;
+    visibility: visible;
 }
 
 .card:hover{
-    background-color: rgb(75, 75, 75)
+    background-color: rgb(75, 75, 75);
+
 }
 .play-btn:hover{
-    transform: scale(1.2,1.2);
-    cursor: pointer
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+
 }

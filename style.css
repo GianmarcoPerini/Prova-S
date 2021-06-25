@@ -74,7 +74,7 @@ section{
     position: absolute;
     bottom: 5%;
     right: 5%;
-    transition: all 200ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 .play{
@@ -87,6 +87,8 @@ section{
     align-items: center;
     font-size: .8rem;
     color: white;
+    box-shadow: 3px 2px 13px rgba(0, 0, 0, 0.5);
+
 }
 
 
